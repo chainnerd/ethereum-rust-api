@@ -22,5 +22,5 @@ tiny-keccak = { version = "2.0", default-features = false, features = ["keccak"]
 
 [dev-dependencies]
 pretty_assertions = "1.0"
-rand = "0.8"
+rand = "0.9"
 ethereum-types = "0.14.0"
