@@ -380,15 +380,6 @@ impl<'de> Visitor<'de> for AbiVisitor {
         }
     }
 }
-#[test]
-    fn test_serde() {
-        let abi: Abi = serde_json::from_str(TEST_ABI_V1).unwrap();
-
-        let ser_abi = serde_json::to_string(&abi).expect("serialized abi");
-        let de_abi: Abi = serde_json::from_str(&ser_abi).expect("deserialized abi");
-
-        assert_eq!(abi, de_abi);
-    }
 
 #[cfg(test)]
 mod test {
